@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- Customize your theme here. -->
+        <item name="android:logo">@android:color/transparent</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

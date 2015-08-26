@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorblock1"
+        android:background="#cd3833"
+        android:width="150dp"
+        android:height="100dp"
+        android:inputType="none"
+        android:clickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/bw2"
+        android:minHeight="125dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorblock2"
+        android:background="#3e80ee"
+        android:focusable="false"
+        android:height="130dp"
+        android:inputType="none"
+        android:layout_alignTop="@+id/bw1"
+        android:layout_alignEnd="@+id/bw2"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/bw1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bw1"
+        android:background="#fff1f1f1"
+        android:inputType="none"
+        android:layout_above="@+id/slider"
+        android:layout_alignParentStart="true"
+        android:width="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/colorblock1" />
+
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:progress="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bw2"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/slider"
+        android:background="#fff1f1f1"
+        android:layout_toEndOf="@+id/bw1"
+        android:layout_alignBottom="@+id/colorblock1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bw3"
+        android:layout_alignEnd="@+id/slider"
+        android:background="#fff1f1f1"
+        android:layout_alignStart="@+id/colorblock2"
+        android:layout_below="@+id/colorblock2"
+        android:layout_alignParentEnd="false"
+        android:layout_above="@+id/slider" />
+
+</RelativeLayout>
